@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/t1"
+        android:text=""
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%"
+        android:background="#d29be7a1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="1"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:onClick="onClick"
+        android:layout_below="@+id/btn20"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:text="2"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn20"
+        android:layout_toRightOf="@+id/btn1"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:text="3"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn30"
+        android:layout_toRightOf="@+id/btn2"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:text="4"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn1"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:text="5"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn2"
+        android:layout_toRightOf="@+id/btn4"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:text="6"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn3"
+        android:layout_toRightOf="@+id/btn5"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text="8"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn7"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn5"
+        android:id="@+id/btn8"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text="("
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn0"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn8"
+        android:id="@+id/btn14"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text=")"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn14"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn9"
+        android:id="@+id/btn15"
+        android:onClick="onClick (MainActivity)" />
+
+
+
+    <Button
+        android:text="9"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn8"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn6"
+        android:id="@+id/btn9"
+        android:onClick="onClick (MainActivity)" />
+
+
+
+    <Button
+        android:text="*"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn9"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn11"
+        android:id="@+id/btn12"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text="-"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn6"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn10"
+        android:id="@+id/btn11"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text="+"
+        app:layout_heightPercent="10%"
+        android:layout_toRightOf="@+id/btn3"
+        app:layout_widthPercent="25%"
+        android:layout_below="@+id/btn30"
+        android:id="@+id/btn10"
+        android:onClick="onClick (MainActivity)" />
+
+
+    <Button
+        android:text="7"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:id="@+id/btn7"
+        android:layout_below="@+id/btn4"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick (MainActivity)" />
+
+
+
+    <Button
+        android:text="0"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:id="@+id/btn0"
+        android:layout_below="@+id/btn7"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick (MainActivity)" />
+
+
+    <Button
+        android:text="AC"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/btn20"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick (MainActivity)" />
+
+    <Button
+        android:text="Del"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/btn30"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick (MainActivity)" />
+
+
+    <Button
+        android:text="/"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"
+        android:id="@+id/btn13"
+        android:onClick="onClick (MainActivity)"
+        android:layout_below="@+id/btn12"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="."
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/btn17"
+        android:onClick="onClick (MainActivity)"
+        android:layout_alignBottom="@+id/btn16"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn16" />
+
+    <Button
+        android:text="="
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/btn16"
+        android:onClick="onClick (MainActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</android.support.percent.PercentRelativeLayout>
