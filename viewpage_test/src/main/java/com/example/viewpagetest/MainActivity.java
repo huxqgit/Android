@@ -15,6 +15,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends Activity implements OnClickListener {
 
+    /* 定义三个按钮 */
     private Button btn_viewpager, btn_fraemgent, btn_fraemgent_viewpager;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -26,10 +27,13 @@ public class MainActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_viewpager = (Button) findViewById(R.id.btn_viewpager);
-        btn_fraemgent = (Button) findViewById(R.id.btn_fraemgent);
-        btn_fraemgent_viewpager = (Button) findViewById(R.id.btn_fraemgent_viewpager);
 
+        /* 按钮绑定 */
+        btn_viewpager = (Button)findViewById(R.id.btn_viewpager);
+        btn_fraemgent = (Button)findViewById(R.id.btn_fraemgent);
+        btn_fraemgent_viewpager = (Button)findViewById(R.id.btn_fraemgent_viewpager);
+
+        /* 按钮设置监听 */
         btn_fraemgent_viewpager.setOnClickListener(this);
         btn_fraemgent.setOnClickListener(this);
         btn_viewpager.setOnClickListener(this);
