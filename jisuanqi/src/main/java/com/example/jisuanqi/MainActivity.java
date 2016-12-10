@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    TextView tv;
+    TextView tv, tv2;
     String s1, s2, s3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn30).setOnClickListener(this);
 
         tv = (TextView)findViewById(R.id.t1);//获取textview组件
+        tv2 = (TextView)findViewById(R.id.t2);
 
 
 
@@ -50,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String oldEt = tv.getText().toString();
         String newEt = "";
 
-        //tv.setText(oldEt + input);
 
         boolean isFu = false;
         if(input.equals("+") || input.equals("-") || input.equals("*") || input.equals("/") || input.equals(".")){
@@ -86,7 +86,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 str = getRet(str);
             }
 
-            tv.setText(oldEt + "=" + str);
+            tv.setText(str);
+            tv2.setText(oldEt + "=" + str);
             return;
         }
 
@@ -172,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case "AC":
                 newEt = "";
+                tv2.setText("");
                 break;
             case "Del":
                 if(oldEt.length() > 0){

@@ -9,11 +9,23 @@
     <TextView
         android:id="@+id/t1"
         android:text=""
-        app:layout_heightPercent="30%"
+        app:layout_heightPercent="20%"
         app:layout_widthPercent="100%"
-        android:background="#d29be7a1"
+        android:background="#d2e7a69b"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:text=""
+        android:background="#d29be7a1"
+        android:layout_below="@+id/t1"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        />
 
     <Button
         android:id="@+id/btn1"
@@ -163,17 +175,8 @@
         app:layout_heightPercent="15%"
         app:layout_widthPercent="50%"
         android:id="@+id/btn20"
-        android:layout_below="@+id/t1"
+        android:layout_below="@+id/t2"
         android:layout_alignParentStart="true"
-        android:onClick="onClick (MainActivity)" />
-
-    <Button
-        android:text="Del"
-        app:layout_heightPercent="15%"
-        app:layout_widthPercent="50%"
-        android:id="@+id/btn30"
-        android:layout_below="@+id/t1"
-        android:layout_alignParentEnd="true"
         android:onClick="onClick (MainActivity)" />
 
 
@@ -205,7 +208,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
 
-
+    <Button
+        android:text="Del"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="50%"
+        android:id="@+id/btn30"
+        android:onClick="onClick (MainActivity)"
+        android:layout_below="@+id/t2"
+        android:layout_alignParentEnd="true" />
 
 
 </android.support.percent.PercentRelativeLayout>
